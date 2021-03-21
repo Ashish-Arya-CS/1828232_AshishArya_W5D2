@@ -31,8 +31,8 @@ const App = () => {
         {filteredStates &&
           filteredStates.map((state) => {
             return (
-              <li>
-                <ul key={state.author}>Isbn :{state.isbn}</ul>
+              <li key={state.author}>
+                <ul>Isbn :{state.isbn}</ul>
                 <ul>Title: {state.title}</ul>
                 <ul>Subtitle: {state.subtitle}</ul>
                 <ul>Author: {state.author}</ul>
