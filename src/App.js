@@ -7,6 +7,8 @@ const App = () => {
   const [search, setSearch] = useState("");
   const [filteredStates, setFilteredStates] = useState(states);
 
+  // using the concpt of debounce in useEffects
+
   useEffect(() => {
     const timer = setTimeout(() => {
       const filter = states.filter((state) => {
